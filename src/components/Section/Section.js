@@ -1,8 +1,16 @@
+import propTypes from 'prop-types';
+import { SectionWrapper } from './Section.styled';
+
 export function Section({ title, children }) {
   return (
-    <div>
+    <SectionWrapper>
       <h2>{title}</h2>
       {children}
-    </div>
+    </SectionWrapper>
   );
 }
+
+Section.propTypes = {
+  title: propTypes.string.isRequired,
+  children: propTypes.node.isRequired,
+};
