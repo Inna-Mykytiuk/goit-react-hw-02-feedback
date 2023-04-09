@@ -1,11 +1,20 @@
-export function Statistics() {
+export function Statistics({
+  good,
+  bad,
+  neutral,
+  title,
+  totalFeedback,
+  feedbackPercentage,
+}) {
   return (
     <div>
-      <h2></h2>
+      <h2>{title}</h2>
       <ul>
-        <li>Good</li>
-        <li>Neutral</li>
-        <li>Bad</li>
+        <li>Good: {good}</li>
+        <li>Neutral: {neutral}</li>
+        <li>Bad: {bad}</li>
+        <li>Total: {totalFeedback}</li>
+        <li>Positive feedback: {feedbackPercentage} %</li>
       </ul>
     </div>
   );

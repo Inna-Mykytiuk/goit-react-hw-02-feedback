@@ -55,4 +55,7 @@ img {
     object-fit: cover;
     object-position: center center;
 }
+ul {
+  list-style: none;
+}
 `;
